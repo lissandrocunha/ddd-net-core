@@ -26,11 +26,11 @@ namespace Infra.CrossCutting.Bus
         {
             if (_container == null) return;
 
-            var obj = _container.GetService(message.MessageType.Equals("DomainNotification")
-                ? typeof(IDomainNotificationHandler<T>)
-                : typeof(IHandler<T>));
+            //var obj = _container.GetService(message.MessageType.Equals("DomainNotification")
+            //    ? typeof(IDomainNotificationHandler<T>)
+            //    : typeof(IHandler<T>));
 
-            ((IHandler<T>)obj).Handle(message);
+            //((IHandler<T>)obj).Handle(message);
 
         }
 
