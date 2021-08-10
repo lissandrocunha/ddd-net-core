@@ -1,4 +1,7 @@
-﻿using Services.Reports.Core.Interfaces;
+﻿using ConvertHtml.NetCore;
+using ConvertHtml.NetCore.Exceptions;
+using ConvertHtml.NetCore.Models;
+using Services.Reports.Core.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Drawing;

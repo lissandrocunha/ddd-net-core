@@ -13,8 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Services.Layout.Core\Services.Layout.Core.csproj" />
-    <ProjectReference Include="..\Services.Reports.Core\Services.Reports.Core.csproj" />
+    <ProjectReference Include="..\Infra.CrossCutting.AspNetFilters\Infra.CrossCutting.AspNetFilters.csproj" />
   </ItemGroup>
 
 </Project>

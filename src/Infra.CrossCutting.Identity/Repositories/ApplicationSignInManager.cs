@@ -24,15 +24,18 @@ namespace Infra.CrossCutting.Identity.Repositories
                                         IUserClaimsPrincipalFactory<ApplicationUser> claimsFactory, 
                                         IOptions<IdentityOptions> optionsAccessor, 
                                         ILogger<SignInManager<ApplicationUser>> logger, 
-                                        IAuthenticationSchemeProvider schemes) 
+                                        IAuthenticationSchemeProvider schemes, 
+                                        IUserConfirmation<ApplicationUser> confirmation) 
             : base(userManager, 
                    contextAccessor, 
                    claimsFactory, 
                    optionsAccessor, 
                    logger, 
-                   schemes)
+                   schemes, 
+                   confirmation)
         {
         }
+
 
         #endregion
 
