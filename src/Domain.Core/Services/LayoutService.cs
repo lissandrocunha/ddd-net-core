@@ -1,6 +1,5 @@
 ﻿using Domain.Core.Services.Interfaces;
-using LayoutService.Core;
-using Newtonsoft.Json.Linq;
+using Services.Layout.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;

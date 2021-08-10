@@ -30,7 +30,7 @@ namespace Services.Layout.Core
 
         #region Methods
 
-        public Layout ObterLayout(string caminhoArquivo)
+        public Models.Layout ObterLayout(string caminhoArquivo)
         {
 
             string jsonLayoutPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), caminhoArquivo);
@@ -60,7 +60,7 @@ namespace Services.Layout.Core
                 }
             }
 
-            var layout = Layout.Factory.Novo(linhas);
+            var layout = Models.Layout.Factory.Novo(linhas);
 
             return layout;
         }
@@ -162,12 +162,12 @@ namespace Services.Layout.Core
             }
         }
 
-        private JObject ImportarLayoutDinamico(Layout layout, IEnumerable<string> arquivoLinhas)
+        private JObject ImportarLayoutDinamico(Models.Layout layout, IEnumerable<string> arquivoLinhas)
         {
             return null;
         }
 
-        private JObject ImportarLayoutFixo(Layout layout, IEnumerable<string> arquivoLinhas)
+        private JObject ImportarLayoutFixo(Models.Layout layout, IEnumerable<string> arquivoLinhas)
         {
             if (layout == null || layout.Linhas.Count == 0) return null;
 
